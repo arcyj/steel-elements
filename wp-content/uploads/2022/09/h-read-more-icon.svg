@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 12.441px;
+        fill: #12192d;
+        text-anchor: middle;
+        font-family: ElegantIcons;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text id="L" class="cls-1" transform="translate(5.868 13.82) scale(1.608)"><tspan x="0">L</tspan></text>
+</svg>

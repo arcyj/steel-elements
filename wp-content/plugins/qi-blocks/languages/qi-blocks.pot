@@ -1,0 +1,1164 @@
+# Copyright (C) 2022 Qode Interactive
+# This file is distributed under the same license as the Qi Blocks plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Qi Blocks 1.0.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/qi-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-12-15T15:54:26+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: qi-blocks\n"
+
+#. Plugin Name of the plugin
+#: helpers/helper.php:20
+#: inc/admin/admin-pages/class-qi-blocks-admin-general-page.php:18
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:47
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:173
+#: inc/admin/admin-pages/templates/header.php:15
+msgid "Qi Blocks"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://qodeinteractive.com/qi-blocks-for-gutenberg/"
+msgstr ""
+
+#. Description of the plugin
+msgid "A collection of blocks for the Gutenberg block editor, developed by Qode Interactive."
+msgstr ""
+
+#. Author of the plugin
+#: inc/admin/admin-pages/templates/footer.php:6
+msgid "Qode Interactive"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://qodeinteractive.com/"
+msgstr ""
+
+#: class-qi-blocks.php:225
+msgid "Example Title Text"
+msgstr ""
+
+#: class-qi-blocks.php:226
+msgid "Example Subtitle Text"
+msgstr ""
+
+#: class-qi-blocks.php:227
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et eros eu felis."
+msgstr ""
+
+#: class-qi-blocks.php:228
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus nisl vitae magna pulvinar laoreet. Nullam erat ipsum, mattis nec mollis ac, accumsan a enim. Nunc at euismod arcu. Aliquam ullamcorper eros justo, vel mollis neque facilisis vel. Proin augue tortor, condimentum id sapien a, tempus venenatis massa. Aliquam egestas eget diam sed sagittis. Vivamus consectetur purus vel felis molestie sollicitudin. Vivamus sit amet enim nisl. Cras vitae varius metus, a hendrerit ex. Sed in mi dolor. Proin pretium nibh non volutpat efficitur."
+msgstr ""
+
+#: class-qi-blocks.php:231
+msgid "Placeholder Image"
+msgstr ""
+
+#: inc/admin/admin-pages/class-qi-blocks-admin-general-page.php:90
+#: inc/admin/admin-pages/templates/parts/sidebar/help-center.php:3
+#: inc/blocks/helper.php:281
+msgid "Help Center"
+msgstr ""
+
+#: inc/admin/admin-pages/class-qi-blocks-admin-general-page.php:91
+#: inc/admin/admin-pages/templates/parts/video-tutorials.php:3
+#: inc/admin/admin-pages/templates/parts/video-tutorials.php:6
+msgid "Video Tutorials"
+msgstr ""
+
+#: inc/admin/admin-pages/class-qi-blocks-admin-general-page.php:92
+#: inc/admin/admin-pages/class-qi-blocks-admin-general-page.php:148
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:7
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:136
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:153
+#: inc/admin/admin-pages/templates/parts/sidebar/templates.php:4
+#: inc/admin/admin-pages/templates/parts/sidebar/templates.php:8
+msgid "Qi Templates"
+msgstr ""
+
+#: inc/admin/admin-pages/class-qi-blocks-admin-general-page.php:99
+msgid "Upgrade"
+msgstr ""
+
+#: inc/admin/admin-pages/class-qi-blocks-admin-general-page.php:139
+msgid "Qi Blocks Premium"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/class-qi-blocks-admin-page-setup-wizard.php:37
+msgid "Setup Wizard"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/class-qi-blocks-admin-page-setup-wizard.php:149
+msgid "Success"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:4
+msgid "Configuration"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:5
+msgid "Elements"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:6
+msgid "Go PRO"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:8
+msgid "Finalize"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:22
+msgid "Quick Setup Wizard - Qi Blocks for Gutenberg"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:48
+msgid "Get Started with Qi Blocks"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:49
+msgid "Pick an installation method that suits your requirements"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:57
+msgid "All (Recommended)"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:58
+msgid "Start off with all Qi Blocks for Gutenberg enabled."
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:67
+msgid "Custom"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:68
+msgid "Select which custom blocks you wish to enable/disable."
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:75
+msgid "Choose the Elements You Wish to Use"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:77
+msgid "Preview All Blocks"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:110
+msgid "Unlock 30+ Premium Blocks"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:112
+msgid "Preview Premium Blocks"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:118
+msgid "Qi Premium Blocks"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:119
+msgid "Get Premium"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:126
+msgid "Get Qi Templates with 550+ modern, prebuilt layouts"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:128
+msgid "- 60 Qi Demos"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:129
+msgid "- 265 Qi Templates"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:130
+msgid "- 232 Qi Patterns"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:131
+msgid "- 32 Qi Wireframes"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:133
+msgid "Get Qi Templates"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:144
+msgid "Collection of diagnostic data & information"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:145
+msgid "We collect non-sensitive diagnostic data and plugin usage information. This information consists of your website URL, language, WordPress and PHP versions, active plugins and themes, and the email you provided. This data allows us to ensure that the plugin stays compatible with the most popular plugins and themes at all times."
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:147
+msgid "Allow"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:148
+msgid "No Thanks"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:161
+msgid "Skip All"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:166
+msgid "Previous"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:167
+msgid "Next"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:174
+msgid "Thank You for Choosing Qi!"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/setup-wizard.php:175
+msgid "All set! Enjoy creating your new website"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/setup-wizard/templates/widget.php:24
+#: inc/admin/admin-pages/sub-pages/widgets/templates/item.php:23
+msgid "Premium"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/welcome/class-qi-blocks-admin-page-welcome.php:32
+msgid "Welcome Page"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/widgets/class-qi-blocks-admin-page-widgets.php:36
+msgid "Blocks"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/widgets/class-qi-blocks-admin-page-widgets.php:128
+msgid "Saved"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/widgets/templates/parts/demo.php:2
+msgid "Demo"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/widgets/templates/parts/documentation.php:2
+#: inc/admin/admin-pages/templates/parts/knowledge-base.php:9
+#: inc/blocks/helper.php:273
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/widgets/templates/parts/search.php:3
+msgid "Search Options"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/widgets/templates/parts/section-title.php:4
+msgid "Activate All"
+msgstr ""
+
+#: inc/admin/admin-pages/sub-pages/widgets/templates/parts/video.php:2
+msgid "Video"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/footer.php:3
+#: inc/admin/admin-pages/templates/header.php:6
+msgid "Qode Interactive Logo"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/footer.php:7
+msgid "Copyright &copy; 2022 Qode Interactive, All rights reserved"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/header.php:16
+msgid " / "
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/all-qi-blocks.php:3
+msgid "All Qi Blocks"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/all-qi-blocks.php:4
+msgid "Browse the entire custom block collection"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/all-qi-blocks.php:5
+msgid "View Blocks"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/all-qi-blocks.php:8
+#: inc/admin/admin-pages/templates/parts/free-demos.php:3
+msgid "Qi Blocks for Gutenberg"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/footer-text.php:2
+msgid "We hope you're having a great time using the Qi Blocks for Gutenberg"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/footer-text.php:7
+msgid "Leave a %s let us know about your experience!"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/footer-text.php:8
+msgid "rating"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/free-demos.php:6
+msgid "Qi Logo"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/free-demos.php:7
+#: inc/blocks/helper.php:287
+msgid "Premium Qi Blocks for Gutenberg"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/free-demos.php:8
+msgid "Huge collection of modern & versatile blocks, demos, patterns & wireframes"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/free-demos.php:9
+msgid "Upgrade Now"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/knowledge-base.php:4
+#: inc/admin/admin-pages/templates/parts/knowledge-base.php:15
+msgid "Knowledge Base"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/knowledge-base.php:5
+msgid "Find answers to WP-related questions"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/knowledge-base.php:6
+#: inc/admin/admin-pages/templates/parts/knowledge-base.php:11
+msgid "view more"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/knowledge-base.php:10
+msgid "Detailed Qi Blocks user guide"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/save.php:8
+msgid "Successfully saved!"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/save.php:14
+msgid "Save"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/help-center.php:4
+msgid "Find answers to your questions or reach out to our support."
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/help-center.php:5
+msgid "Submit A Ticket"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/rate.php:3
+msgid "Rate Qi Blocks"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/rate.php:4
+msgid "Let us know about your experience with Qi Blocks."
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/rate.php:5
+msgid "Rate US"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/social-behance.php:20
+msgid "Behance"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/social-dribbble.php:26
+msgid "Dribbble"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/social-facebook.php:10
+msgid "Facebook"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/social-instagram.php:20
+msgid "Instagram"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/social-linkedin.php:13
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/social-pinterest.php:21
+msgid "Pinterest"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/social-twitter.php:17
+msgid "Twitter"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/templates.php:9
+msgid "60+ demos, 265+ templates, 232+ patterns, 32+ wireframes"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/sidebar/templates.php:10
+msgid "View More"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/subscribe.php:3
+msgid "Subscribe"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/subscribe.php:6
+msgid "Qode Newsletter"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/subscribe.php:7
+msgid "Subscribe to get all our news & updates"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/subscribe.php:11
+msgid "Your Email..."
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/video-tutorials.php:7
+msgid "Step-by-step Qi Blocks tutorials"
+msgstr ""
+
+#: inc/admin/admin-pages/templates/parts/video-tutorials.php:8
+msgid "See Videos"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:30
+msgid "Default"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:34
+msgid "System Fonts"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:38
+msgid "Arial"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:42
+msgid "Arial Black"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:46
+msgid "Comic Sans MS"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:50
+msgid "Courier New"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:54
+msgid "Georgia"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:58
+msgid "Impact"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:62
+msgid "Lucida Console"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:66
+msgid "Lucida Sans Unicode"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:70
+msgid "Palatino Linotype"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:74
+msgid "Tahoma"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:78
+msgid "Times New Roman"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:82
+msgid "Trebuchet MS"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:86
+msgid "Verdana"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:90
+msgid "Sans-Serif"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:94
+msgid "Serif"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:98
+msgid "Serif Alternative"
+msgstr ""
+
+#: inc/admin/fonts/class-qi-blocks-fonts.php:102
+msgid "Monospace"
+msgstr ""
+
+#: inc/admin/global-settings/typography/class-qi-blocks-global-settings-typography.php:190
+msgid "Global Typography Settings"
+msgstr ""
+
+#: inc/admin/global-settings/typography/class-qi-blocks-global-settings-typography.php:219
+msgid "Global Typography Settings Styles"
+msgstr ""
+
+#: inc/admin/global-settings/typography/class-qi-blocks-global-settings-typography.php:231
+msgid "Global Typography Settings Apply To"
+msgstr ""
+
+#: inc/admin/global-styles/class-qi-blocks-framework-global-styles.php:93
+#: inc/contact-form-7/class-qi-blocks-contact-form-7-rest-api.php:55
+#: inc/woocommerce/class-qi-blocks-woocommerce-rest-api.php:56
+msgid "Get method is invalid"
+msgstr ""
+
+#: inc/admin/global-styles/class-qi-blocks-framework-global-styles.php:101
+#: inc/admin/global-styles/class-qi-blocks-framework-global-styles.php:103
+#: inc/admin/global-styles/class-qi-blocks-framework-global-styles.php:105
+#: inc/admin/global-styles/class-qi-blocks-framework-global-styles.php:107
+msgid "Options are successfully returned"
+msgstr ""
+
+#: inc/admin/global-styles/class-qi-blocks-framework-global-styles.php:110
+#: inc/admin/global-styles/class-qi-blocks-framework-global-styles.php:141
+msgid "Options are invalid"
+msgstr ""
+
+#: inc/admin/global-styles/class-qi-blocks-framework-global-styles.php:118
+msgid "Options can't be updated"
+msgstr ""
+
+#: inc/admin/global-styles/class-qi-blocks-framework-global-styles.php:139
+msgid "Options are saved"
+msgstr ""
+
+#: inc/blocks/accordion/class-qi-blocks-accordion-block.php:13
+msgid "Accordions and Toggles"
+msgstr ""
+
+#: inc/blocks/accordion/class-qi-blocks-accordion-block.php:14
+#: inc/blocks/advanced-text/class-qi-blocks-advanced-text-block.php:14
+#: inc/blocks/button/class-qi-blocks-button-block.php:14
+#: inc/blocks/call-to-action/class-qi-blocks-call-to-action-block.php:14
+#: inc/blocks/divider/class-qi-blocks-divider-block.php:14
+#: inc/blocks/helper.php:35
+#: inc/blocks/helper.php:42
+#: inc/blocks/helper.php:112
+#: inc/blocks/helper.php:140
+#: inc/blocks/helper.php:154
+#: inc/blocks/helper.php:231
+#: inc/blocks/icon-with-text/class-qi-blocks-icon-with-text-block.php:14
+#: inc/blocks/message-box/class-qi-blocks-message-box-block.php:14
+#: inc/blocks/section-title/class-qi-blocks-section-title-block.php:14
+#: inc/blocks/tabs-horizontal/class-qi-blocks-tabs-horizontal-block.php:14
+#: inc/blocks/tabs-vertical/class-qi-blocks-tabs-vertical-block.php:14
+msgid "Typography"
+msgstr ""
+
+#: inc/blocks/advanced-columns/class-qi-blocks-advanced-columns-block.php:13
+msgid "Advanced Columns"
+msgstr ""
+
+#: inc/blocks/advanced-columns/class-qi-blocks-advanced-columns-block.php:14
+#: inc/blocks/author-info/class-qi-blocks-author-info-block.php:14
+#: inc/blocks/categories/class-qi-blocks-categories-block.php:14
+#: inc/blocks/comments-template/class-qi-blocks-comments-template-block.php:14
+#: inc/blocks/post-author/class-qi-blocks-post-author-block.php:14
+#: inc/blocks/post-date/class-qi-blocks-post-date-block.php:14
+#: inc/blocks/post-terms/class-qi-blocks-post-terms-block.php:14
+#: inc/blocks/post-title/class-qi-blocks-post-title-block.php:14
+#: inc/blocks/search/class-qi-blocks-search-block.php:14
+#: inc/blocks/spacer/class-qi-blocks-spacer-block.php:14
+#: inc/blocks/tag-cloud/class-qi-blocks-tag-cloud-block.php:14
+msgid "Content"
+msgstr ""
+
+#: inc/blocks/advanced-text/class-qi-blocks-advanced-text-block.php:13
+msgid "Advanced Text"
+msgstr ""
+
+#: inc/blocks/author-info/class-qi-blocks-author-info-block.php:13
+msgid "Author Info"
+msgstr ""
+
+#: inc/blocks/banner/class-qi-blocks-banner-block.php:13
+msgid "Banners"
+msgstr ""
+
+#: inc/blocks/banner/class-qi-blocks-banner-block.php:14
+#: inc/blocks/blog-list/class-qi-blocks-blog-list-block.php:14
+#: inc/blocks/clients-list/class-qi-blocks-clients-list-block.php:14
+#: inc/blocks/helper.php:49
+#: inc/blocks/helper.php:56
+#: inc/blocks/helper.php:77
+#: inc/blocks/helper.php:91
+#: inc/blocks/helper.php:126
+#: inc/blocks/helper.php:161
+#: inc/blocks/helper.php:189
+#: inc/blocks/helper.php:224
+#: inc/blocks/info-box/class-qi-blocks-info-box-block.php:14
+#: inc/blocks/pricing-table/class-qi-blocks-pricing-table-block.php:14
+#: inc/blocks/team-member/class-qi-blocks-team-member-block.php:14
+#: inc/blocks/testimonials-list/class-qi-blocks-testimonials-list-block.php:14
+msgid "Business"
+msgstr ""
+
+#: inc/blocks/blog-list/class-qi-blocks-blog-list-block.php:13
+msgid "Blog List"
+msgstr ""
+
+#: inc/blocks/button/class-qi-blocks-button-block.php:13
+msgid "Button"
+msgstr ""
+
+#: inc/blocks/call-to-action/class-qi-blocks-call-to-action-block.php:13
+msgid "Call to Action"
+msgstr ""
+
+#: inc/blocks/cards-gallery/class-qi-blocks-cards-gallery-block.php:13
+msgid "Cards Gallery"
+msgstr ""
+
+#: inc/blocks/cards-gallery/class-qi-blocks-cards-gallery-block.php:14
+#: inc/blocks/helper.php:98
+#: inc/blocks/helper.php:105
+#: inc/blocks/helper.php:168
+#: inc/blocks/helper.php:182
+#: inc/blocks/helper.php:217
+#: inc/blocks/parallax-images/class-qi-blocks-parallax-images-block.php:14
+#: inc/blocks/text-marquee/class-qi-blocks-text-marquee-block.php:14
+msgid "Creative"
+msgstr ""
+
+#: inc/blocks/categories/class-qi-blocks-categories-block.php:13
+msgid "Categories"
+msgstr ""
+
+#: inc/blocks/categories/class-qi-blocks-categories-block.php:134
+#: inc/blocks/tag-cloud/class-qi-blocks-tag-cloud-block.php:187
+msgid "No terms were found for provided query parameters."
+msgstr ""
+
+#: inc/blocks/clients-list/class-qi-blocks-clients-list-block.php:13
+msgid "Clients List"
+msgstr ""
+
+#: inc/blocks/comments-template/class-qi-blocks-comments-template-block.php:13
+msgid "Comments Template"
+msgstr ""
+
+#: inc/blocks/contact-form-7/class-qi-blocks-contact-form-7-block.php:13
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/blocks/contact-form-7/class-qi-blocks-contact-form-7-block.php:14
+#: inc/blocks/helper.php:238
+msgid "Form Style"
+msgstr ""
+
+#: inc/blocks/countdown/class-qi-blocks-countdown-block.php:13
+msgid "Countdown"
+msgstr ""
+
+#: inc/blocks/countdown/class-qi-blocks-countdown-block.php:14
+#: inc/blocks/helper.php:28
+#: inc/blocks/helper.php:63
+#: inc/blocks/helper.php:84
+#: inc/blocks/helper.php:119
+#: inc/blocks/helper.php:147
+#: inc/blocks/helper.php:175
+#: inc/blocks/helper.php:245
+#: inc/blocks/image-gallery-masonry/class-qi-blocks-image-gallery-masonry-block.php:14
+#: inc/blocks/image-gallery-pinterest/class-qi-blocks-image-gallery-pinterest-block.php:14
+#: inc/blocks/image-gallery/class-qi-blocks-image-gallery-block.php:14
+#: inc/blocks/image-slider/class-qi-blocks-image-slider-block.php:14
+#: inc/blocks/single-image/class-qi-blocks-single-image-block.php:14
+#: inc/blocks/timeline/class-qi-blocks-timeline-block.php:14
+msgid "Showcase/Presentational"
+msgstr ""
+
+#: inc/blocks/counter/class-qi-blocks-counter-block.php:13
+msgid "Counters"
+msgstr ""
+
+#: inc/blocks/counter/class-qi-blocks-counter-block.php:14
+#: inc/blocks/helper.php:70
+#: inc/blocks/helper.php:133
+#: inc/blocks/process/class-qi-blocks-process-block.php:14
+#: inc/blocks/progress-bar-circle/class-qi-blocks-progress-bar-circle-block.php:14
+#: inc/blocks/progress-bar-horizontal/class-qi-blocks-progress-bar-horizontal-block.php:14
+#: inc/blocks/progress-bar-vertical/class-qi-blocks-progress-bar-vertical-block.php:14
+msgid "Infographics"
+msgstr ""
+
+#: inc/blocks/divider/class-qi-blocks-divider-block.php:13
+msgid "Divider"
+msgstr ""
+
+#: inc/blocks/faq/class-qi-blocks-faq-block.php:13
+msgid "FAQs"
+msgstr ""
+
+#: inc/blocks/faq/class-qi-blocks-faq-block.php:14
+#: inc/blocks/how-to/class-qi-blocks-how-to-block.php:14
+#: inc/blocks/table-of-contents/class-qi-blocks-table-of-contents-block.php:14
+msgid "SEO"
+msgstr ""
+
+#: inc/blocks/helper.php:20
+msgid "Add to Cart Button"
+msgstr ""
+
+#: inc/blocks/helper.php:21
+#: inc/blocks/helper.php:196
+#: inc/blocks/helper.php:203
+#: inc/blocks/helper.php:210
+#: inc/blocks/product-list/class-qi-blocks-product-list-block.php:14
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/blocks/helper.php:27
+msgid "Advanced Navigation"
+msgstr ""
+
+#: inc/blocks/helper.php:34
+msgid "Animated Text"
+msgstr ""
+
+#: inc/blocks/helper.php:41
+msgid "Blockquote"
+msgstr ""
+
+#: inc/blocks/helper.php:48
+msgid "Blog Carousel"
+msgstr ""
+
+#: inc/blocks/helper.php:55
+msgid "Working Hours"
+msgstr ""
+
+#: inc/blocks/helper.php:62
+msgid "Cards Slider"
+msgstr ""
+
+#: inc/blocks/helper.php:69
+msgid "Pie and Donut Charts"
+msgstr ""
+
+#: inc/blocks/helper.php:76
+msgid "Clients Carousel"
+msgstr ""
+
+#: inc/blocks/helper.php:83
+msgid "Content Menu"
+msgstr ""
+
+#: inc/blocks/helper.php:90
+msgid "Data Table"
+msgstr ""
+
+#: inc/blocks/helper.php:97
+msgid "Device Frame Carousel"
+msgstr ""
+
+#: inc/blocks/helper.php:104
+msgid "Device Frame Slider"
+msgstr ""
+
+#: inc/blocks/helper.php:111
+msgid "Drop Caps"
+msgstr ""
+
+#: inc/blocks/helper.php:118
+msgid "Dual Image with Content"
+msgstr ""
+
+#: inc/blocks/helper.php:125
+msgid "Google Map"
+msgstr ""
+
+#: inc/blocks/helper.php:132
+msgid "Graphs"
+msgstr ""
+
+#: inc/blocks/helper.php:139
+msgid "Highlighted Text"
+msgstr ""
+
+#: inc/blocks/helper.php:146
+msgid "Image Hotspots"
+msgstr ""
+
+#: inc/blocks/helper.php:153
+msgid "Info Button"
+msgstr ""
+
+#: inc/blocks/helper.php:160
+msgid "Interactive Banners"
+msgstr ""
+
+#: inc/blocks/helper.php:167
+msgid "Interactive Links"
+msgstr ""
+
+#: inc/blocks/helper.php:174
+msgid "Item Showcase"
+msgstr ""
+
+#: inc/blocks/helper.php:181
+msgid "Preview Slider"
+msgstr ""
+
+#: inc/blocks/helper.php:188
+msgid "Pricing List"
+msgstr ""
+
+#: inc/blocks/helper.php:195
+msgid "Product Category List"
+msgstr ""
+
+#: inc/blocks/helper.php:202
+msgid "Product Slider"
+msgstr ""
+
+#: inc/blocks/helper.php:209
+msgid "Rating"
+msgstr ""
+
+#: inc/blocks/helper.php:216
+msgid "Slider Switch"
+msgstr ""
+
+#: inc/blocks/helper.php:223
+msgid "Testimonials Carousel"
+msgstr ""
+
+#: inc/blocks/helper.php:230
+msgid "Typeout Text"
+msgstr ""
+
+#: inc/blocks/helper.php:237
+msgid "WPForms"
+msgstr ""
+
+#: inc/blocks/helper.php:244
+msgid "Before/After Comparison Slider"
+msgstr ""
+
+#: inc/blocks/helper.php:265
+msgid "Block Showcase"
+msgstr ""
+
+#: inc/blocks/helper.php:269
+msgid "Live Demos"
+msgstr ""
+
+#: inc/blocks/helper.php:277
+msgid "Video Tutorial"
+msgstr ""
+
+#: inc/blocks/helper.php:292
+msgid "Qi Templates for Gutenberg"
+msgstr ""
+
+#: inc/blocks/how-to/class-qi-blocks-how-to-block.php:13
+msgid "How-to Schema"
+msgstr ""
+
+#: inc/blocks/icon-with-text/class-qi-blocks-icon-with-text-block.php:13
+msgid "Icon with Text"
+msgstr ""
+
+#: inc/blocks/image-gallery-masonry/class-qi-blocks-image-gallery-masonry-block.php:13
+msgid "Masonry Image Gallery"
+msgstr ""
+
+#: inc/blocks/image-gallery-pinterest/class-qi-blocks-image-gallery-pinterest-block.php:13
+msgid "Pinterest Image Gallery"
+msgstr ""
+
+#: inc/blocks/image-gallery/class-qi-blocks-image-gallery-block.php:13
+msgid "Image Gallery"
+msgstr ""
+
+#: inc/blocks/image-slider/class-qi-blocks-image-slider-block.php:13
+msgid "Image Slider"
+msgstr ""
+
+#: inc/blocks/info-box/class-qi-blocks-info-box-block.php:13
+msgid "Info Box"
+msgstr ""
+
+#: inc/blocks/message-box/class-qi-blocks-message-box-block.php:13
+msgid "Message Boxes"
+msgstr ""
+
+#: inc/blocks/parallax-images/class-qi-blocks-parallax-images-block.php:13
+msgid "Parallax Image Showcase"
+msgstr ""
+
+#: inc/blocks/post-author/class-qi-blocks-post-author-block.php:13
+msgid "Post Author"
+msgstr ""
+
+#: inc/blocks/post-date/class-qi-blocks-post-date-block.php:13
+msgid "Post Date"
+msgstr ""
+
+#: inc/blocks/post-terms/class-qi-blocks-post-terms-block.php:13
+msgid "Post Terms"
+msgstr ""
+
+#: inc/blocks/post-terms/class-qi-blocks-post-terms-block.php:233
+msgid "Post term items not found."
+msgstr ""
+
+#: inc/blocks/post-title/class-qi-blocks-post-title-block.php:13
+msgid "Post Title"
+msgstr ""
+
+#: inc/blocks/pricing-table/class-qi-blocks-pricing-table-block.php:13
+msgid "Pricing Table"
+msgstr ""
+
+#: inc/blocks/process/class-qi-blocks-process-block.php:13
+msgid "Process"
+msgstr ""
+
+#: inc/blocks/product-list/class-qi-blocks-product-list-block.php:13
+msgid "Product List"
+msgstr ""
+
+#: inc/blocks/progress-bar-circle/class-qi-blocks-progress-bar-circle-block.php:13
+msgid "Radial Progress Bar"
+msgstr ""
+
+#: inc/blocks/progress-bar-horizontal/class-qi-blocks-progress-bar-horizontal-block.php:13
+msgid "Horizontal Progress Bar"
+msgstr ""
+
+#: inc/blocks/progress-bar-vertical/class-qi-blocks-progress-bar-vertical-block.php:13
+msgid "Vertical Progress Bar"
+msgstr ""
+
+#: inc/blocks/search/class-qi-blocks-search-block.php:13
+#: inc/blocks/search/class-qi-blocks-search-block.php:67
+msgid "Search"
+msgstr ""
+
+#: inc/blocks/section-title/class-qi-blocks-section-title-block.php:13
+msgid "Section Title"
+msgstr ""
+
+#: inc/blocks/single-image/class-qi-blocks-single-image-block.php:13
+msgid "Single Image"
+msgstr ""
+
+#: inc/blocks/spacer/class-qi-blocks-spacer-block.php:13
+msgid "Spacer"
+msgstr ""
+
+#: inc/blocks/table-of-contents/class-qi-blocks-table-of-contents-block.php:13
+msgid "Table of Contents"
+msgstr ""
+
+#: inc/blocks/tabs-horizontal/class-qi-blocks-tabs-horizontal-block.php:13
+msgid "Horizontal Tabs"
+msgstr ""
+
+#: inc/blocks/tabs-vertical/class-qi-blocks-tabs-vertical-block.php:13
+msgid "Vertical Tabs"
+msgstr ""
+
+#: inc/blocks/tag-cloud/class-qi-blocks-tag-cloud-block.php:13
+msgid "Tag Cloud"
+msgstr ""
+
+#: inc/blocks/team-member/class-qi-blocks-team-member-block.php:13
+msgid "Team"
+msgstr ""
+
+#: inc/blocks/testimonials-list/class-qi-blocks-testimonials-list-block.php:13
+msgid "Testimonials"
+msgstr ""
+
+#: inc/blocks/text-marquee/class-qi-blocks-text-marquee-block.php:13
+msgid "Text Marquee"
+msgstr ""
+
+#: inc/blocks/timeline/class-qi-blocks-timeline-block.php:13
+msgid "Timeline Showcase"
+msgstr ""
+
+#: inc/blog/class-qi-blocks-blog-rest-api.php:49
+#: inc/comments/class-qi-blocks-comments-rest-api.php:52
+#: inc/contact-form-7/class-qi-blocks-contact-form-7-rest-api.php:86
+#: inc/media/class-qi-blocks-media.php:131
+#: inc/woocommerce/class-qi-blocks-woocommerce-rest-api.php:95
+msgid "Rest is invalid"
+msgstr ""
+
+#: inc/blog/class-qi-blocks-blog-rest-api.php:120
+msgid "Posts are successfully returned"
+msgstr ""
+
+#: inc/blog/class-qi-blocks-blog-rest-api.php:122
+msgid "No posts matching query!"
+msgstr ""
+
+#: inc/blog/templates/parts/post-info/read-more.php:7
+msgid "Read More"
+msgstr ""
+
+#: inc/blog/templates/parts/posts-not-found.php:1
+#: inc/woocommerce/templates/parts/posts-not-found.php:1
+msgid "No posts were found for provided query parameters."
+msgstr ""
+
+#: inc/comments/class-qi-blocks-comments-rest-api.php:65
+msgid "Returned comments HTML content"
+msgstr ""
+
+#: inc/comments/class-qi-blocks-comments-rest-api.php:67
+#: inc/contact-form-7/class-qi-blocks-contact-form-7-rest-api.php:96
+#: inc/media/class-qi-blocks-media.php:151
+msgid "Parameters are invalid"
+msgstr ""
+
+#: inc/comments/helper.php:168
+msgid "Reply to %s"
+msgstr ""
+
+#: inc/comments/helper.php:173
+#: inc/comments/templates/comments-template.php:39
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/comments/templates/comments-template.php:11
+msgid "Comments for this post are not enabled."
+msgstr ""
+
+#: inc/comments/templates/comments-template.php:73
+msgid "Comments navigation"
+msgstr ""
+
+#: inc/comments/templates/comments-template.php:74
+msgid "Comments"
+msgstr ""
+
+#: inc/comments/templates/comments-template.php:97
+msgid "Comments on this post are not allowed."
+msgstr ""
+
+#: inc/contact-form-7/class-qi-blocks-contact-form-7-rest-api.php:76
+msgid "Contact forms are successfully returned"
+msgstr ""
+
+#: inc/contact-form-7/class-qi-blocks-contact-form-7-rest-api.php:78
+msgid "No available contact forms"
+msgstr ""
+
+#: inc/contact-form-7/class-qi-blocks-contact-form-7-rest-api.php:94
+msgid "Returned contact form HTML content"
+msgstr ""
+
+#: inc/media/class-qi-blocks-media.php:46
+msgid "Qi Square Size"
+msgstr ""
+
+#: inc/media/class-qi-blocks-media.php:47
+msgid "Square"
+msgstr ""
+
+#: inc/media/class-qi-blocks-media.php:55
+msgid "Qi Landscape Size"
+msgstr ""
+
+#: inc/media/class-qi-blocks-media.php:56
+msgid "Landscape"
+msgstr ""
+
+#: inc/media/class-qi-blocks-media.php:64
+msgid "Qi Portrait Size"
+msgstr ""
+
+#: inc/media/class-qi-blocks-media.php:65
+msgid "Portrait"
+msgstr ""
+
+#: inc/media/class-qi-blocks-media.php:73
+msgid "Qi Huge Square Size"
+msgstr ""
+
+#: inc/media/class-qi-blocks-media.php:74
+msgid "Huge Square"
+msgstr ""
+
+#: inc/media/class-qi-blocks-media.php:140
+msgid "Image rotation is not supported by your web host."
+msgstr ""
+
+#: inc/media/class-qi-blocks-media.php:146
+msgid "Image is resized"
+msgstr ""
+
+#: inc/media/class-qi-blocks-media.php:148
+msgid "Image can not be resized"
+msgstr ""
+
+#: inc/page-templates/class-qi-blocks-page-templates.php:40
+#: inc/page-templates/class-qi-blocks-page-templates.php:83
+#: inc/page-templates/class-qi-blocks-page-templates.php:160
+msgid "Qi Blocks Full Width"
+msgstr ""
+
+#: inc/page-templates/class-qi-blocks-page-templates.php:85
+msgid "Custom full width page template created by Qi Blocks team"
+msgstr ""
+
+#: inc/pagination/templates/pagination-standard.php:3
+msgid "Posts"
+msgstr ""
+
+#: inc/pagination/templates/pagination-standard.php:4
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/woocommerce/class-qi-blocks-woocommerce-rest-api.php:84
+#: inc/woocommerce/class-qi-blocks-woocommerce-rest-api.php:167
+msgid "Products are successfully returned"
+msgstr ""
+
+#: inc/woocommerce/class-qi-blocks-woocommerce-rest-api.php:86
+msgid "No available products"
+msgstr ""
+
+#: inc/woocommerce/class-qi-blocks-woocommerce-rest-api.php:169
+msgid "No products matching query!"
+msgstr ""
+
+#: inc/woocommerce/helper.php:107
+msgid "Sold"
+msgstr ""
+
+#: inc/woocommerce/helper.php:121
+msgid "Sale"
+msgstr ""
+
+#: assets/js/main-editor.js:12
+msgid "Google Fonts"
+msgstr ""
