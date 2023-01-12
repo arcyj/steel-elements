@@ -458,7 +458,7 @@ if ( ! function_exists( 'qi_blocks_get_svg_icon' ) ) {
 if ( ! function_exists( 'qi_blocks_get_block_option_typography_attributes' ) ) {
 	/**
 	 * Function that return block option typography attributes
-	 * 
+	 *
 	 * @param string $option_name
 	 *
 	 * @return array

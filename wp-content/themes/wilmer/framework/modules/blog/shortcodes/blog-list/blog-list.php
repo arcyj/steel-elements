@@ -5,23 +5,23 @@ use WilmerCore\Lib;
 
 class BlogList implements Lib\ShortcodeInterface {
 	private $base;
-	
+
 	function __construct() {
 		$this->base = 'mkdf_blog_list';
-		
+
 		add_action('vc_before_init', array($this,'vcMap'));
-		
+
 		//Category filter
 		add_filter( 'vc_autocomplete_mkdf_blog_list_category_callback', array( &$this, 'blogCategoryAutocompleteSuggester', ), 10, 1 ); // Get suggestion(find). Must return an array
-		
+
 		//Category render
 		add_filter( 'vc_autocomplete_mkdf_blog_list_category_render', array( &$this, 'blogCategoryAutocompleteRender', ), 10, 1 ); // Get suggestion(find). Must return an array
 	}
-	
+
 	public function getBase() {
 		return $this->base;
 	}
-	
+
 	public function vcMap() {
 		vc_map(
 			array(
@@ -213,7 +213,7 @@ class BlogList implements Lib\ShortcodeInterface {
 			)
 		);
 	}
-	
+
 	public function render( $atts, $content = null ) {
 		$default_atts = array(
 			'type'                  => 'standard',
@@ -239,46 +239,46 @@ class BlogList implements Lib\ShortcodeInterface {
 			'pagination_type'       => 'no-pagination'
 		);
 		$params       = shortcode_atts( $default_atts, $atts );
-		
+
 		$queryArray             = $this->generateQueryArray( $params );
 		$query_result           = new \WP_Query( $queryArray );
 		$params['query_result'] = $query_result;
-		
+
 		$params['holder_data']    = $this->getHolderData( $params );
 		$params['holder_classes'] = $this->getHolderClasses( $params, $default_atts );
 		$params['module']         = 'list';
-		
+
 		$params['max_num_pages'] = $query_result->max_num_pages;
 		$params['paged']         = isset( $query_result->query['paged'] ) ? $query_result->query['paged'] : 1;
-		
+
 		$params['this_object'] = $this;
-		
+
 		ob_start();
-		
+
 		wilmer_mikado_get_module_template_part( 'shortcodes/blog-list/holder', 'blog', $params['type'], $params );
-		
+
 		$html = ob_get_contents();
-		
+
 		ob_end_clean();
-		
+
 		return $html;
 	}
-	
+
 	public function getHolderClasses( $params, $default_atts ) {
 		$holderClasses = array();
-		
+
 		$holderClasses[] = ! empty( $params['type'] ) ? 'mkdf-bl-' . $params['type'] : 'mkdf-bl-' . $default_atts['type'];
 		$holderClasses[] = ! empty( $params['number_of_columns'] ) ? 'mkdf-' . $params['number_of_columns'] . '-columns' : 'mkdf-' . $default_atts['number_of_columns'] . '-columns';
 		$holderClasses[] = ! empty( $params['space_between_items'] ) ? 'mkdf-' . $params['space_between_items'] . '-space' : 'mkdf-' . $default_atts['space_between_items'] . '-space';
 		$holderClasses[] = ! empty( $params['pagination_type'] ) ? 'mkdf-bl-pag-' . $params['pagination_type'] : 'mkdf-bl-pag-' . $default_atts['pagination_type'];
 		$holderClasses[] =  'mkdf-bl-skin-' . $params['skin'];
-		
+
 		return implode( ' ', $holderClasses );
 	}
-	
+
 	public function getHolderData( $params ) {
 		$dataString = '';
-		
+
 		if ( get_query_var( 'paged' ) ) {
 			$paged = get_query_var( 'paged' );
 		} elseif ( get_query_var( 'page' ) ) {
@@ -286,56 +286,56 @@ class BlogList implements Lib\ShortcodeInterface {
 		} else {
 			$paged = 1;
 		}
-		
+
 		$query_result = $params['query_result'];
-		
+
 		$params['max_num_pages'] = $query_result->max_num_pages;
-		
+
 		if ( ! empty( $paged ) ) {
 			$params['next-page'] = $paged + 1;
 		}
-		
+
 		foreach ( $params as $key => $value ) {
 			if ( $key !== 'query_result' && $value !== '' ) {
 				$new_key = str_replace( '_', '-', $key );
-				
+
 				$dataString .= ' data-' . $new_key . '=' . esc_attr( str_replace( ' ', '', $value ) );
 			}
 		}
-		
+
 		return $dataString;
 	}
-	
+
 	public function generateQueryArray( $params ) {
 		$queryArray = array(
 			'post_status'    => 'publish',
-			'post_type'      => 'post',
+			'post_type'      => 'portfolio-item',
 			'orderby'        => $params['orderby'],
 			'order'          => $params['order'],
 			'posts_per_page' => $params['number_of_posts'],
 			'post__not_in'   => get_option( 'sticky_posts' )
 		);
-		
+
 		if ( ! empty( $params['category'] ) ) {
 			$queryArray['category_name'] = $params['category'];
 		}
-		
+
 		if ( ! empty( $params['next_page'] ) ) {
 			$queryArray['paged'] = $params['next_page'];
 		} else {
 			$query_array['paged'] = 1;
 		}
-		
+
 		return $queryArray;
 	}
-	
+
 	public function getTitleStyles( $params ) {
 		$styles = array();
-		
+
 		if ( ! empty( $params['title_transform'] ) ) {
 			$styles[] = 'text-transform: ' . $params['title_transform'];
 		}
-		
+
 		return implode( ';', $styles );
 	}
 
@@ -352,7 +352,7 @@ class BlogList implements Lib\ShortcodeInterface {
 					FROM {$wpdb->terms} AS a
 					LEFT JOIN ( SELECT term_id, taxonomy  FROM {$wpdb->term_taxonomy} ) AS b ON b.term_id = a.term_id
 					WHERE b.taxonomy = 'category' AND a.name LIKE '%%%s%%'", stripslashes( $query ) ), ARRAY_A );
-		
+
 		$results = array();
 		if ( is_array( $post_meta_infos ) && ! empty( $post_meta_infos ) ) {
 			foreach ( $post_meta_infos as $value ) {
@@ -362,10 +362,10 @@ class BlogList implements Lib\ShortcodeInterface {
 				$results[]     = $data;
 			}
 		}
-		
+
 		return $results;
 	}
-	
+
 	/**
 	 * Find blog category by slug
 	 * @since 4.4
@@ -380,25 +380,25 @@ class BlogList implements Lib\ShortcodeInterface {
 			// get portfolio category
 			$category = get_term_by( 'slug', $query, 'category' );
 			if ( is_object( $category ) ) {
-				
+
 				$category_slug = $category->slug;
 				$category_title = $category->name;
-				
+
 				$category_title_display = '';
 				if ( ! empty( $category_title ) ) {
 					$category_title_display = esc_html__( 'Category', 'wilmer' ) . ': ' . $category_title;
 				}
-				
+
 				$data          = array();
 				$data['value'] = $category_slug;
 				$data['label'] = $category_title_display;
-				
+
 				return ! empty( $data ) ? $data : false;
 			}
-			
+
 			return false;
 		}
-		
+
 		return false;
 	}
 }

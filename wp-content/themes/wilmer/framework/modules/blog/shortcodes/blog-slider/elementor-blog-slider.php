@@ -2,7 +2,7 @@
 class WilmerMikadoElementorBlogSlider extends \Elementor\Widget_Base {
 
 	public function get_name() {
-		return 'mkdf_blog_slider'; 
+		return 'mkdf_blog_slider';
 	}
 
 	public function get_title() {
@@ -210,55 +210,55 @@ class WilmerMikadoElementorBlogSlider extends \Elementor\Widget_Base {
 		$params = $this->get_settings_for_display();
 
 
-		
+
 		$queryArray             = $this->generateBlogQueryArray( $params );
 		$query_result           = new \WP_Query( $queryArray );
 		$params['query_result'] = $query_result;
-		
+
 		$params['slider_type']    = ! empty( $params['slider_type'] ) ? $params['slider_type'] : 'slider';
 		$params['slider_classes'] = $this->getSliderClasses( $params );
 		$params['slider_data']    = $this->getSliderData( $params );
-		
+
 		ob_start();
-		
+
 		wilmer_mikado_get_module_template_part( 'shortcodes/blog-slider/holder', 'blog', '', $params );
-		
+
 		$html = ob_get_contents();
-		
+
 		ob_end_clean();
-		
+
 		echo wilmer_mikado_get_module_part($html);
 	}
 
 	public function generateBlogQueryArray( $params ) {
 		$queryArray = array(
 			'post_status'    => 'publish',
-			'post_type'      => 'post',
+			'post_type'      => 'portfolio-item',
 			'orderby'        => $params['orderby'],
 			'order'          => $params['order'],
 			'posts_per_page' => $params['number_of_posts'],
 			'post__not_in'   => get_option( 'sticky_posts' )
 		);
-		
+
 		if ( ! empty( $params['category'] ) ) {
 			$queryArray['category_name'] = $params['category'];
 		}
-		
+
 		return $queryArray;
 	}
 
 	public function getSliderClasses( $params ) {
 		$holderClasses = array();
-		
+
 		$holderClasses[] = 'mkdf-bs-' . $params['slider_type'];
-		
+
 		return implode( ' ', $holderClasses );
 	}
 
 	private function getSliderData( $params ) {
 		$type        = $params['slider_type'];
 		$slider_data = array();
-		
+
 		if($type == 'carousel') {
 			$slider_data['data-number-of-items']   = '2';
 			$slider_data['data-slider-margin']     = '80';
@@ -274,7 +274,7 @@ class WilmerMikadoElementorBlogSlider extends \Elementor\Widget_Base {
 			$slider_data['data-number-of-items']   = '1';
 			$slider_data['data-enable-pagination'] = 'yes';
 		}
-		
+
 		return $slider_data;
 	}
 

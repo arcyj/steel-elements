@@ -2,7 +2,7 @@
 class WilmerMikadoElementorBlogList extends \Elementor\Widget_Base {
 
 	public function get_name() {
-		return 'mkdf_blog_list'; 
+		return 'mkdf_blog_list';
 	}
 
 	public function get_title() {
@@ -405,7 +405,7 @@ class WilmerMikadoElementorBlogList extends \Elementor\Widget_Base {
             'pagination_type'       => 'no-pagination'
         );
         $params       = shortcode_atts( $default_atts, $this->get_settings_for_display() );
-		
+
 		$queryArray             = $this->generateQueryArray( $params );
 		$query_result           = new \WP_Query( $queryArray );
 		$params['query_result'] = $query_result;
@@ -413,20 +413,20 @@ class WilmerMikadoElementorBlogList extends \Elementor\Widget_Base {
         $params['holder_data']    = $this->getHolderData( $params );
         $params['holder_classes'] = $this->getHolderClasses( $params, $default_atts );
         $params['module']         = 'list';
-		
+
 		$params['max_num_pages'] = $query_result->max_num_pages;
 		$params['paged']         = isset( $query_result->query['paged'] ) ? $query_result->query['paged'] : 1;
-		
+
 		$params['this_object'] = $this;
-		
+
 		ob_start();
-		
+
 		wilmer_mikado_get_module_template_part( 'shortcodes/blog-list/holder', 'blog', $params['type'], $params );
-		
+
 		$html = ob_get_contents();
-		
+
 		ob_end_clean();
-		
+
 		echo wilmer_mikado_get_module_part($html);
 	}
 
@@ -452,56 +452,56 @@ class WilmerMikadoElementorBlogList extends \Elementor\Widget_Base {
 		} else {
 			$paged = 1;
 		}
-		
+
 		$query_result = $params['query_result'];
-		
+
 		$params['max_num_pages'] = $query_result->max_num_pages;
-		
+
 		if ( ! empty( $paged ) ) {
 			$params['next-page'] = $paged + 1;
 		}
-		
+
 		foreach ( $params as $key => $value ) {
 			if ( $key !== 'query_result' && $value !== '' ) {
 				$new_key = str_replace( '_', '-', $key );
-				
+
 				$dataString .= ' data-' . $new_key . '=' . esc_attr( str_replace( ' ', '', $value ) );
 			}
 		}
-		
+
 		return $dataString;
 	}
 
 	public function generateQueryArray( $params ) {
 		$queryArray = array(
 			'post_status'    => 'publish',
-			'post_type'      => 'post',
+			'post_type'      => 'portfolio-item',
 			'orderby'        => $params['orderby'],
 			'order'          => $params['order'],
 			'posts_per_page' => $params['number_of_posts'],
 			'post__not_in'   => get_option( 'sticky_posts' )
 		);
-		
+
 		if ( ! empty( $params['category'] ) ) {
 			$queryArray['category_name'] = $params['category'];
 		}
-		
+
 		if ( ! empty( $params['next_page'] ) ) {
 			$queryArray['paged'] = $params['next_page'];
 		} else {
 			$query_array['paged'] = 1;
 		}
-		
+
 		return $queryArray;
 	}
 
 	public function getTitleStyles( $params ) {
 		$styles = array();
-		
+
 		if ( ! empty( $params['title_transform'] ) ) {
 			$styles[] = 'text-transform: ' . $params['title_transform'];
 		}
-		
+
 		return implode( ';', $styles );
 	}
 

@@ -2262,8 +2262,13 @@ if ( ! class_exists( 'Qi_Blocks_Blog_List_Block' ) ) {
 				$query_result = $wp_query;
 			} else {
 				$attributes['additional_query_args'] = qi_blocks_get_additional_query_args( $attributes );
-
-				$query_result = new WP_Query( qi_blocks_get_query_params( $attributes ) );
+        $attributes['post_type'] = 'portfolio-item';
+        $args = array(
+          'post_status'         => 'publish',
+          'post_type'           => 'portfolio-item',
+          'posts_per_page'      => '3',
+        );
+				$query_result = new WP_Query( $args );
 			}
 
 			$attributes['query_result'] = $query_result;

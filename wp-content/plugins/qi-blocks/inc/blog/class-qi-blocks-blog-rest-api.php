@@ -55,7 +55,7 @@ class Qi_Blocks_Blog_Rest_API {
 				$inherit_global_query = isset( $atts['inheritGlobalQuery'] ) && ! empty( $atts['inheritGlobalQuery'] );
 
 				if ( $inherit_global_query ) {
-					$query_result = new WP_Query( array( 'post_type' => 'post' ) );
+					$query_result = new WP_Query( array( 'post_type' => 'portfolio-item' ) );
 				} else {
 					$atts['additional_query_args'] = qi_blocks_get_additional_query_args( $atts );
 
