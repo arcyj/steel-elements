@@ -31,3 +31,23 @@
 .hero-slider-item-info p{
   font-size: 22px;
 }
+
+.mkdf-logo-wrapper a{
+    display: flex;
+    align-items: center;
+}
+
+.mkdf-logo-wrapper a img{
+    width: auto;
+    height: 41px;
+    padding: 10px;
+}
+
+.qi-block-blog-list .qodef-e-media-image {
+  width: 100%;
+}
+
+.qi-block-blog-list .qodef-e-media-image img {
+    height: 280px;
+    object-fit: cover;
+}
