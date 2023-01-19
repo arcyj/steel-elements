@@ -8,14 +8,14 @@ if ( ! function_exists( 'wilmer_mikado_get_header' ) ) {
 	 */
 	function wilmer_mikado_get_header() {
 		$id = wilmer_mikado_get_page_id();
-		
+
 		//will be read from options
 		$header_type = wilmer_mikado_get_meta_field_intersect( 'header_type', $id );
-		
+
 		$menu_area_in_grid = wilmer_mikado_get_meta_field_intersect( 'menu_area_in_grid', $id );
-		
+
 		$header_behavior = wilmer_mikado_get_meta_field_intersect( 'header_behaviour', $id );
-		
+
 		if ( HeaderFactory::getInstance()->validHeaderObject() ) {
 			$parameters = array(
 				'hide_logo'          => wilmer_mikado_options()->getOptionValue( 'hide_logo' ) == 'yes' ? true : false,
@@ -26,9 +26,9 @@ if ( ! function_exists( 'wilmer_mikado_get_header' ) ) {
 				) ) ? true : false,
 				'show_fixed_wrapper' => in_array( $header_behavior, array( 'fixed-on-scroll' ) ) ? true : false,
 			);
-			
+
 			$parameters = apply_filters( 'wilmer_mikado_filter_header_type_parameters', $parameters, $header_type );
-			
+
 			HeaderFactory::getInstance()->getHeaderObject()->loadTemplate( $parameters );
 		}
 	}
@@ -114,10 +114,10 @@ if ( ! function_exists( 'wilmer_mikado_get_header_widget_area_one' ) ) {
 	function wilmer_mikado_get_header_widget_area_one() {
 		$page_id                 = wilmer_mikado_get_page_id();
 		$custom_menu_widget_area = get_post_meta( $page_id, 'mkdf_custom_header_widget_area_one_meta', true );
-		
+
 		if ( get_post_meta( $page_id, 'mkdf_disable_header_widget_areas_meta', 'true' ) !== 'yes' ) {
 			if ( is_active_sidebar( 'mkdf-header-widget-area-one' ) && empty( $custom_menu_widget_area ) ) {
-				dynamic_sidebar( 'mkdf-header-widget-area-one' );
+				// dynamic_sidebar( 'mkdf-header-widget-area-one' );
 			} else if ( ! empty( $custom_menu_widget_area ) && is_active_sidebar( $custom_menu_widget_area ) ) {
 				dynamic_sidebar( $custom_menu_widget_area );
 			}

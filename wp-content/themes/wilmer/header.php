@@ -10,7 +10,7 @@
 	 * @see wilmer_core_set_open_graph_meta - hooked with 10
 	 */
 	do_action( 'wilmer_mikado_action_header_meta' );
-	
+
 	wp_head(); ?>
 </head>
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
@@ -36,6 +36,6 @@
              * @see wilmer_mikado_get_header_bottom_navigation() - hooked with 40
              */
             do_action( 'wilmer_mikado_action_after_wrapper_inner' ); ?>
-	        
+
             <div class="mkdf-content" <?php wilmer_mikado_content_elem_style_attr(); ?>>
                 <div class="mkdf-content-inner">

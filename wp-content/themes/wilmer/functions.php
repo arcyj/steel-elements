@@ -33,8 +33,8 @@ if (! function_exists('wilmer_mikado_styles')) {
         $style_dynamic_deps_array = apply_filters('wilmer_mikado_filter_style_dynamic_deps', []);
 
         if (file_exists(MIKADO_ROOT_DIR . '/assets/css/custom.css') && wilmer_mikado_is_css_folder_writable() && ! is_multisite()) {
-          wp_enqueue_style('custom', MIKADO_ASSETS_ROOT . '/css/custom.css', $style_dynamic_deps_array, filemtime(MIKADO_ROOT_DIR . '/assets/css/custom.css')); //it must be included after woocommerce styles so it can override it
-      }
+            wp_enqueue_style('custom', MIKADO_ASSETS_ROOT . '/css/custom.css', $style_dynamic_deps_array, filemtime(MIKADO_ROOT_DIR . '/assets/css/custom.css')); //it must be included after woocommerce styles so it can override it
+        }
 
         if (file_exists(MIKADO_ROOT_DIR . '/assets/css/style_dynamic.css') && wilmer_mikado_is_css_folder_writable() && ! is_multisite()) {
             wp_enqueue_style('wilmer-mikado-style-dynamic', MIKADO_ASSETS_ROOT . '/css/style_dynamic.css', $style_dynamic_deps_array, filemtime(MIKADO_ROOT_DIR . '/assets/css/style_dynamic.css')); //it must be included after woocommerce styles so it can override it
@@ -192,6 +192,7 @@ if (! function_exists('wilmer_mikado_scripts')) {
         wp_enqueue_script('packery', MIKADO_ASSETS_ROOT . '/js/modules/plugins/packery-mode.pkgd.min.js', [ 'jquery' ], false, true);
         wp_enqueue_script('swiper', MIKADO_ASSETS_ROOT . '/js/modules/plugins/swiper.min.js', [ 'jquery' ], false, true);
         wp_enqueue_script('jquery-mousewheel', MIKADO_ASSETS_ROOT . '/js/modules/plugins/jquery-mousewheel.min.js', [ 'jquery' ], false, true);
+        wp_enqueue_script('custom', MIKADO_ASSETS_ROOT . '/js/custom.js', [ 'jquery' ], false, true);
 
         do_action('wilmer_mikado_action_enqueue_third_party_scripts');
 
@@ -839,4 +840,23 @@ if(! function_exists('wilmer_mikado_add_registration_admin_notice')) {
     }
 
     add_action('acf/init', 'acf_home_hero');
+
+    function acf_testimonials()
+    {
+        // check function exists
+        if(function_exists('acf_register_block')) {
+            // register a portfolio item block
+            acf_register_block([
+                'name' => 'Testimonials Posts',
+                'title' => __('Testimonial Slider'),
+                'description' => __('Testimonials custom post type loop'),
+                'render_template' => 'template-parts/blocks/testimonials.php',
+                'category' => 'layout',
+                'icon' => 'excerpt-view',
+                'keywords' => [ 'testimonials' ],
+            ]);
+        }
+    }
+
+    add_action('acf/init', 'acf_testimonials');
 }
