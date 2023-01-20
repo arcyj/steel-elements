@@ -150,3 +150,7 @@
 .text-banner-button:hover svg path{
   fill: #fff;
 }
+
+.remove-wrap .qodef-gutenberg-row {
+  flex-wrap: nowrap;
+}
