@@ -841,6 +841,25 @@ if(! function_exists('wilmer_mikado_add_registration_admin_notice')) {
 
     add_action('acf/init', 'acf_home_hero');
 
+    function acf_text_banner()
+    {
+        // check function exists
+        if(function_exists('acf_register_block')) {
+            // register a portfolio item block
+            acf_register_block([
+                'name' => 'Text Banner',
+                'title' => __('Text Banner'),
+                'description' => __('Banner with text and url'),
+                'render_template' => 'template-parts/blocks/block-text-banner.php',
+                'category' => 'layout',
+                'icon' => 'excerpt-view',
+                'keywords' => [ 'banner' ],
+            ]);
+        }
+    }
+
+    add_action('acf/init', 'acf_text_banner');
+
     function acf_testimonials()
     {
         // check function exists
@@ -859,4 +878,5 @@ if(! function_exists('wilmer_mikado_add_registration_admin_notice')) {
     }
 
     add_action('acf/init', 'acf_testimonials');
+
 }
