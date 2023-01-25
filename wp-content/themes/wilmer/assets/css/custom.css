@@ -71,6 +71,8 @@
   max-width: 1300px;
   margin: auto;
   margin-bottom: 50px;
+  padding-bottom: 50px;
+  position: relative;
 }
 .testimonial-qoute{
   width: 50px;

@@ -34,8 +34,8 @@
             </svg>
             </span>
             <div class="testimonial-item-image">
-            <?php if (has_post_thumbnail( $post->ID ) ): ?>
-            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+            <?php if (has_post_thumbnail( get_the_ID() ) ): ?>
+                <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' ); ?>
                 <img src="<?php echo $image[0]; ?>"/>
             <?php endif; ?>
             </div>
