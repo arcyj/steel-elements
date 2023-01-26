@@ -156,3 +156,22 @@
 .remove-wrap .qodef-gutenberg-row {
   flex-wrap: nowrap;
 }
+
+footer .mkdf-footer-top-holder .widget a:hover {
+  color: #1D7D81;
+}
+
+a[href$="#pll_switcher"] .item_text{
+  display: flex !important;
+  align-items: center;
+  font-size: 14px !important;
+}
+.lang-item .item_text{
+  display: flex !important;
+  align-items: center;
+  font-size: 14px !important;
+}
+
+.swiper-pagination-bullet-active{
+  background: rgba(29,125,129,1) !important;
+ }
