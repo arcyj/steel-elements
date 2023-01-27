@@ -74,6 +74,9 @@
     height: 280px;
     object-fit: cover;
 }
+.qi-block-blog-list .qodef-e-title{
+  min-height: 60px;
+}
 .mkdf-mobile-header .mkdf-position-left {
   max-width: 40%;
   margin-left: 10px;
