@@ -41,6 +41,15 @@
   font-size: 80px;
   color: #fff;
 }
+@media only screen and (max-width: 600px) {
+  .hero-slider-item-info h3{
+    line-height: 50px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+  }
+}
 .hero-slider-item-info p{
   font-size: 22px;
   color: #fff;
@@ -64,6 +73,10 @@
 .qi-block-blog-list .qodef-e-media-image img {
     height: 280px;
     object-fit: cover;
+}
+.mkdf-mobile-header .mkdf-position-left {
+  max-width: 40%;
+  margin-left: 10px;
 }
 
 .testimonial-wrapper{
