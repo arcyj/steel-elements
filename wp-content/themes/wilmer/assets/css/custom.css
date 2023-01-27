@@ -80,7 +80,7 @@
 }
 
 .mkdf-mobile-header .mkdf-position-left a {
-  height: unset;
+  height: unset !important;
 }
 
 .testimonial-wrapper{
