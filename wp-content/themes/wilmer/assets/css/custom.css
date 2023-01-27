@@ -79,6 +79,10 @@
   margin-left: 10px;
 }
 
+.mkdf-mobile-header .mkdf-position-left a {
+  height: unset;
+}
+
 .testimonial-wrapper{
   display: block;
   max-width: 1300px;
