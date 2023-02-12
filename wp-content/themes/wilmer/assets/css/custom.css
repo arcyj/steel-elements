@@ -225,3 +225,16 @@ a[href$="#pll_switcher"] .item_text{
 .swiper-pagination-bullet-active{
   background: rgba(29,125,129,1) !important;
  }
+
+ @media only screen and (max-width: 764px) {
+  h2{
+    font-size: 45px;
+  }
+  .qodef-gutenberg-row {
+    display: block;
+  }
+  .wp-block-qi-blocks-column{
+    width: 95%;
+    margin: 10px auto;
+  }
+}
