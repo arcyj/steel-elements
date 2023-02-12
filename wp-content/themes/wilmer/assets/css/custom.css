@@ -17,6 +17,9 @@ h3{
 a{
   font-family: 'Work Sans', sans-serif !important;
 }
+.mkdf-title-holder{
+  height: 200px !important;
+}
 .hero-slider{
   min-height: 700px;
   width: 100%;
