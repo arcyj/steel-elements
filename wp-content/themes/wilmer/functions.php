@@ -880,3 +880,9 @@ if(! function_exists('wilmer_mikado_add_registration_admin_notice')) {
     add_action('acf/init', 'acf_testimonials');
 
 }
+
+add_action( 'admin_enqueue_scripts', 'custom_blocks');
+
+function custom_blocks() {
+  wp_enqueue_style( 'custom-blocks-style', get_stylesheet_directory_uri() . '/assets/css/custom-blocks-style.css' );
+}
