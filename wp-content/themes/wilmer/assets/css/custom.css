@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+.qodef-m-text{
+  font-family: 'Work Sans', sans-serif !important;
+}
+p{
+  font-family: 'Work Sans', sans-serif !important;
+}
+h1{
+  font-family: 'Work Sans', sans-serif !important;
+}
+h2{
+  font-family: 'Work Sans', sans-serif !important;
+}
+h3{
+  font-family: 'Work Sans', sans-serif !important;
+}
+a{
+  font-family: 'Work Sans', sans-serif !important;
+}
 .hero-slider{
   min-height: 700px;
   width: 100%;
