@@ -231,10 +231,10 @@ a[href$="#pll_switcher"] .item_text{
     font-size: 45px;
   }
   .qodef-gutenberg-row {
-    display: block;
+    display: block !important;
   }
   .wp-block-qi-blocks-column{
-    width: 95%;
-    margin: 10px auto;
+    width: 95% !important;
+    margin: 10px auto !important;
   }
 }
