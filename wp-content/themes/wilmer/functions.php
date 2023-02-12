@@ -104,7 +104,7 @@ if (! function_exists('wilmer_mikado_google_fonts_styles')) {
 
         //default fonts
         $default_font_family = [
-            'Yantramanav',
+            'Open Sans',
             'Poppins',
         ];
 
