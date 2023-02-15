@@ -222,7 +222,7 @@ a[href$="#pll_switcher"] .item_text{
   font-size: 14px !important;
 }
 
-.lang-item a:hover::before{
+.lang-item a:hover .item_outer:before{
   display:none;
 }
 
