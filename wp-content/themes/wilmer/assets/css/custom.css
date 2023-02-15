@@ -222,6 +222,10 @@ a[href$="#pll_switcher"] .item_text{
   font-size: 14px !important;
 }
 
+.lang-item a:hover::before{
+  display:none;
+}
+
 .swiper-pagination-bullet-active{
   background: rgba(29,125,129,1) !important;
  }
