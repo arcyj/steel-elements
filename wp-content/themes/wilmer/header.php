@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+	<meta name="google-site-verification" content="iPSQinXdIHQ7eetQdI3elAZRoW0KXMR4bafxGXztMv4" />
 	<?php
 	/**
 	 * wilmer_mikado_action_header_meta hook
